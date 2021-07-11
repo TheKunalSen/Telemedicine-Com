@@ -1,0 +1,14 @@
+* {
+    margin:0;
+    padding: 0;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+@page {
+    size: 25cm 35.7cm;
+}
