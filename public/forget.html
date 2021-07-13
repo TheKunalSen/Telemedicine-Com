@@ -8,30 +8,18 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="/logind" method="post" class="row g-3 needs-validation" action="login" novalidate>
+    <form action="/forgetotp" method="post" class="row g-3 needs-validation" action="login" novalidate>
        
         <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label">Username</label>
+          <label for="validationCustomUsername" class="form-label">Enter your registered Phone number</label>
           <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input name="loginname" type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
+            <span class="input-group-text" id="inputGroupPrepend">📞</span>
+            <input name="forgetnumber" type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            
           </div>
         </div>
-        <div class="col-md-4">
-            <label for="validationCustomUsername" class="form-label">Password</label>
-            <div class="input-group has-validation">
-              <span class="input-group-text" id="inputGroupPrepend">🔒</span>
-              <input name="loginpow" type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-              <div class="invalid-feedback">
-                Please enter your username
-              </div>
-            </div>
-          </div>
-          <a href="./forget">Forget password</a>
-          <a href="./regis">register</a>
+        
+          
        
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Submit form</button>
